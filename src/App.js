@@ -1,10 +1,12 @@
 import './App.css';
 import Header from './components/header/Header';
+import Home from './components/landing-page/Home';
 
 function App() {
   return (
-    <div className="">
+    <div className="bg-gray-200">
       <Header/>
+      <Home/>
     </div>
   );
 }

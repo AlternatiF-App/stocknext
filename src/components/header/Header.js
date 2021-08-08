@@ -13,18 +13,18 @@ export default function Header() {
     }
 
     return (
-        <div className="py-4 px-6 md:px-14 lg:px-16 xl:px-20 2xl:px-24 flex justify-between">
+        <div className="bg-white bg-opacity-70 py-4 px-6 md:px-14 lg:px-16 xl:px-20 2xl:px-24 flex justify-between">
             <div className="font-nunito text-3xl font-bold tracking-wide">
                 <h1>stock<span className="text-green-600">next</span></h1>
             </div>
             <div className="hidden sm:hidden md:hidden lg:flex xl:flex 2xl:flex justify-end w-full">
                 <ul className="flex items-center lg:gap-6 xl:gap-8 2xl:gap-10 text-gray-500 hover:text-green-600">
-                    <li className="font-nunito font-sm">Home</li>
-                    <li className="font-nunito font-sm">Browse</li>
-                    <li className="font-nunito font-sm">Source More</li>
-                    <li className="font-nunito font-sm">Our Service</li>
-                    <li className="font-nunito font-sm">Login</li>
-                    <li className="font-nunito font-sm">Register</li>
+                    <li className="font-nunito font-sm border-b-2 hover:border-green-600 transition duration-300 ease-in-out">Home</li>
+                    <li className="font-nunito font-sm border-b-2 hover:border-green-600 transition duration-300 ease-in-out">Browse</li>
+                    <li className="font-nunito font-sm border-b-2 hover:border-green-600 transition duration-300 ease-in-out">Source More</li>
+                    <li className="font-nunito font-sm border-b-2 hover:border-green-600 transition duration-300 ease-in-out">Our Service</li>
+                    <li className="font-nunito font-sm border-b-2 hover:border-green-600 transition duration-300 ease-in-out">Login</li>
+                    <li className="font-nunito font-sm border-b-2 hover:border-green-600 transition duration-300 ease-in-out">Register</li>
                     <li className="bg-green-600 text-white px-4 py-2 rounded-md">
                         Post Request
                     </li>
