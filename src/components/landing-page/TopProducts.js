@@ -51,7 +51,7 @@ export default function TopProducts() {
 
     return (
         <div className="container mx-auto my-6">
-            <div className="relative text-center font-nunito">
+            <div className="relative text-center font-nunito mb-6">
                 <h1 className="text-2xl font-bold">
                     Top Products
                 </h1>
@@ -63,23 +63,23 @@ export default function TopProducts() {
                 <div className="flex items-center justify-between">
                     <ul className="flex space-x-1 overflow-x-auto">
                         <li onClick={() => toggleMenu(1, "top")} 
-                            className={`${menu === 1 ? "border-green-500" : "border-transparent"} rounded-md border-b-2 flex justify-center h-14 w-16`}>
+                            className={`${menu === 1 ? "border-green-500" : "border-transparent"} rounded-md border-b-2 flex justify-center  h-12 w-14 md:h-14 md:w-16`}>
                             <svg xmlns="http://www.w3.org/2000/svg" 
-                                className={`${menu === 1 ? ("bg-green-500 text-white") : ("text-green-500 bg-white")} h-12 w-12 rounded-md border-2 p-2`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                className={`${menu === 1 ? ("bg-green-500 text-white") : ("text-green-500 bg-white")} h-10 w-10 md:h-12 md:w-12 rounded-md border-2 p-2`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                             </svg>
                         </li>
                         <li onClick={() => toggleMenu(2, "best")} 
-                            className={`${menu === 2 ? "border-green-500" : "border-transparent"} rounded-md border-b-2 flex justify-center h-14 w-16`}>
+                            className={`${menu === 2 ? "border-green-500" : "border-transparent"} rounded-md border-b-2 flex justify-center h-12 w-14 md:h-14 md:w-16`}>
                             <svg xmlns="http://www.w3.org/2000/svg" 
-                                className={`${menu === 2 ? ("bg-green-500 text-white") : ("text-green-500 bg-white")} h-12 w-12 rounded-md border-2 p-2`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                className={`${menu === 2 ? ("bg-green-500 text-white") : ("text-green-500 bg-white")} h-10 w-10 md:h-12 md:w-12 rounded-md border-2 p-2`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
                             </svg>
                         </li>
                         <li onClick={() => toggleMenu(3, "lowest")} 
-                            className={`${menu === 3 ? "border-green-500" : "border-transparent"} rounded-md border-b-2 flex justify-center h-14 w-16`}>
+                            className={`${menu === 3 ? "border-green-500" : "border-transparent"} rounded-md border-b-2 flex justify-center h-12 w-14 md:h-14 md:w-16`}>
                             <svg xmlns="http://www.w3.org/2000/svg" 
-                                className={`${menu === 3 ? ("bg-green-500 text-white") : ("text-green-500 bg-white")} h-12 w-12 rounded-md border-2 p-2`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                className={`${menu === 3 ? ("bg-green-500 text-white") : ("text-green-500 bg-white")} h-10 w-10 md:h-12 md:w-12 rounded-md border-2 p-2`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                             </svg>
                         </li>
