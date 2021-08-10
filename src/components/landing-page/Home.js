@@ -4,7 +4,7 @@ import {SearchIcon} from '@heroicons/react/solid'
 
 export default function Home() {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 bg-gray-200">
             <div className="py-8 md:py-14 mx-6 lg:mx-20 font-nunito">
                 <h2 className="text-gray-500 font-extrabold">stocknext</h2>
                 <h1 className="text-6xl lg:text-7xl xl:text-8xl 2xl:font-8xl font-bold my-2">

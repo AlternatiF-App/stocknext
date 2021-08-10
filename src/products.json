@@ -1,0 +1,233 @@
+[
+    {
+        "id":1,
+        "img":"./images/CHARMING.jpg",
+        "category":"top",
+        "merk":"Scarlett",
+        "region":"Indonesia",
+        "price":"100",
+        "stock":"30",
+        "grosir":"80",
+        "shipping":"1 - 3"
+    },
+    {
+        "id":2,
+        "img":"./images/CHARMING.jpg",
+        "category":"top",
+        "merk":"Scarlett",
+        "region":"Indonesia",
+        "price":"100",
+        "stock":"30",
+        "grosir":"80",
+        "shipping":"1 - 3"
+    },
+    {
+        "id":3,
+        "img":"./images/CHARMING.jpg",
+        "category":"top",
+        "merk":"Scarlett",
+        "region":"Indonesia",
+        "price":"100",
+        "stock":"30",
+        "grosir":"80",
+        "shipping":"1 - 3"
+    },
+    {
+        "id":4,
+        "img":"./images/CHARMING.jpg",
+        "category":"top",
+        "merk":"Scarlett",
+        "region":"Indonesia",
+        "price":"100",
+        "stock":"30",
+        "grosir":"80",
+        "shipping":"1 - 3"
+    },
+    {
+        "id":5,
+        "img":"./images/CHARMING.jpg",
+        "category":"top",
+        "merk":"Scarlett",
+        "region":"Indonesia",
+        "price":"100",
+        "stock":"30",
+        "grosir":"80",
+        "shipping":"1 - 3"
+    },
+    {
+        "id":6,
+        "img":"./images/CHARMING.jpg",
+        "category":"top",
+        "merk":"Scarlett",
+        "region":"Indonesia",
+        "price":"100",
+        "stock":"30",
+        "grosir":"80",
+        "shipping":"1 - 3"
+    },
+    {
+        "id":7,
+        "img":"./images/CHARMING.jpg",
+        "category":"top",
+        "merk":"Scarlett",
+        "region":"Indonesia",
+        "price":"100",
+        "stock":"30",
+        "grosir":"80",
+        "shipping":"1 - 3"
+    },
+    {
+        "id":8,
+        "img":"./images/JOLLY.jpg",
+        "category":"best",
+        "merk":"Scarlett",
+        "region":"Indonesia",
+        "price":"100",
+        "stock":"30",
+        "grosir":"80",
+        "shipping":"1 - 3"
+    },
+    {
+        "id":9,
+        "img":"./images/JOLLY.jpg",
+        "category":"best",
+        "merk":"Scarlett",
+        "region":"Indonesia",
+        "price":"100",
+        "stock":"30",
+        "grosir":"80",
+        "shipping":"1 - 3"
+    },
+    {
+        "id":10,
+        "img":"./images/JOLLY.jpg",
+        "category":"best",
+        "merk":"Scarlett",
+        "region":"Indonesia",
+        "price":"100",
+        "stock":"30",
+        "grosir":"80",
+        "shipping":"1 - 3"
+    },
+    {
+        "id":11,
+        "img":"./images/JOLLY.jpg",
+        "category":"best",
+        "merk":"Scarlett",
+        "region":"Indonesia",
+        "price":"100",
+        "stock":"30",
+        "grosir":"80",
+        "shipping":"1 - 3"
+    },
+    {
+        "id":12,
+        "img":"./images/JOLLY.jpg",
+        "category":"best",
+        "merk":"Scarlett",
+        "region":"Indonesia",
+        "price":"100",
+        "stock":"30",
+        "grosir":"80",
+        "shipping":"1 - 3"
+    },
+    {
+        "id":13,
+        "img":"./images/JOLLY.jpg",
+        "category":"best",
+        "merk":"Scarlett",
+        "region":"Indonesia",
+        "price":"100",
+        "stock":"30",
+        "grosir":"80",
+        "shipping":"1 - 3"
+    },
+    {
+        "id":14,
+        "img":"./images/JOLLY.jpg",
+        "category":"best",
+        "merk":"Scarlett",
+        "region":"Indonesia",
+        "price":"100",
+        "stock":"30",
+        "grosir":"80",
+        "shipping":"1 - 3"
+    },
+    {
+        "id":15,
+        "img":"./images/ROMANSA.jpg",
+        "category":"lowest",
+        "merk":"Scarlett",
+        "region":"Indonesia",
+        "price":"100",
+        "stock":"30",
+        "grosir":"80",
+        "shipping":"1 - 3"
+    },
+    {
+        "id":16,
+        "img":"./images/ROMANSA.jpg",
+        "category":"lowest",
+        "merk":"Scarlett",
+        "region":"Indonesia",
+        "price":"100",
+        "stock":"30",
+        "grosir":"80",
+        "shipping":"1 - 3"
+    },
+    {
+        "id":17,
+        "img":"./images/ROMANSA.jpg",
+        "category":"lowest",
+        "merk":"Scarlett",
+        "region":"Indonesia",
+        "price":"100",
+        "stock":"30",
+        "grosir":"80",
+        "shipping":"1 - 3"
+    },
+    {
+        "id":18,
+        "img":"./images/ROMANSA.jpg",
+        "category":"lowest",
+        "merk":"Scarlett",
+        "region":"Indonesia",
+        "price":"100",
+        "stock":"30",
+        "grosir":"80",
+        "shipping":"1 - 3"
+    },
+    {
+        "id":19,
+        "img":"./images/ROMANSA.jpg",
+        "category":"lowest",
+        "merk":"Scarlett",
+        "region":"Indonesia",
+        "price":"100",
+        "stock":"30",
+        "grosir":"80",
+        "shipping":"1 - 3"
+    },
+    {
+        "id":20,
+        "img":"./images/ROMANSA.jpg",
+        "category":"lowest",
+        "merk":"Scarlett",
+        "region":"Indonesia",
+        "price":"100",
+        "stock":"30",
+        "grosir":"80",
+        "shipping":"1 - 3"
+    },
+    {
+        "id":21,
+        "img":"./images/ROMANSA.jpg",
+        "category":"lowest",
+        "merk":"Scarlett",
+        "region":"Indonesia",
+        "price":"100",
+        "stock":"30",
+        "grosir":"80",
+        "shipping":"1 - 3"
+    }
+]
