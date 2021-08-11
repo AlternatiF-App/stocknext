@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import CardProduct from './card/CardProduct'
 import jsonProducts from '../../products.json'
 
-export default function TopProducts() {
+export default function TopServices() {
 
     const [menu, setMenu] = useState(1)
     const [service, setService] = useState("top")
@@ -53,7 +53,7 @@ export default function TopProducts() {
         <div className="container mx-auto mt-16">
             <div className="relative text-center font-nunito mb-6">
                 <h1 className="text-xl lg:text-3xl xl:text-4xl 2xl:text-4xl font-bold">
-                    Top Products
+                    Top Services
                 </h1>
                 <h2 className="text-base lg:text-xl xl:text-2xl 2xl:text-2xl tracking-wide">
                     We source directly from multiple factories to ensure the best quality and lowest prices.
