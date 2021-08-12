@@ -16,7 +16,7 @@ export default function Evaluation() {
                 <img className="w-96 h-96 object-cover rounded-md hidden md:block"
                     src={`${process.env.PUBLIC_URL}/images/team.jpg`}
                 />
-                <div className="flex overflow-x-auto items-center z-50 -ml-20">
+                <div className="flex overflow-x-auto items-center z-50 md:-ml-20">
                     <div className="flex space-x-4">
                         <CardEvaluation/>
                         <CardEvaluation/>

@@ -13,11 +13,11 @@ export default function Join() {
                 <svg xmlns="http://www.w3.org/2000/svg" className="text-green-600 absolute ml-5 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <button className="absolute rounded-md ml-52 md:ml-64 text-sm font-nunito bg-green-600 text-white py-3 px-6 md:px-7">
+                <button className="absolute rounded-md ml-48 md:ml-64 text-sm font-nunito bg-green-600 text-white py-3 px-6 md:px-7">
                     Subscribe
                 </button>
                 <input
-                    className="shadow-lg py-2 pl-14 pr-32 md:pr-36 h-14 w-full md:w-96 text-black outline-none border-2 border-green-600 rounded-md"
+                    className="shadow-lg py-2 pl-14 pr-36 md:pr-36 h-14 w-80 md:w-96 text-black outline-none border-2 border-green-600 rounded-md"
                 />
             </div>
         </div>
