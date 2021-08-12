@@ -49,6 +49,7 @@ export default function CardProduct(props) {
                         Add to import list
                     </button>
                 </div>
+                <div className="group-hover:hidden block mt-12 px-1"/>
             </div>
         </div>
     )
