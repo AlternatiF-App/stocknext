@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function CardEvaluation() {
     return (
-        <div className="bg-white font-nunito w-80 h-auto p-8 shadow-lg">
+        <div className="bg-white font-nunito w-80 h-auto p-8 shadow-2xl">
             <h1 className="font-bold mb-2">
                 Donac ultrices imperdiet cursus
             </h1>

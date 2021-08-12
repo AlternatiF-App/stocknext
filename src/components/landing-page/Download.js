@@ -17,10 +17,10 @@ export default function Download() {
                     Our application is designed for Android and Apple and you can find our application in googleplay and appstore.
                 </p>
                 <div className="flex space-x-2 justify-center md:justify-end">
-                    <img className="w-1/5"
+                    <img className="w-2/5 md:w-1/3 xl:w-1/5"
                         src={`${process.env.PUBLIC_URL}/images/googleplay.png`}
                     />
-                    <img className="w-1/5"
+                    <img className="w-2/5 md:w-1/3 xl:w-1/5"
                         src={`${process.env.PUBLIC_URL}/images/appstore.png`}
                     />
                 </div>
