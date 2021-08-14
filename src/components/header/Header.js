@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import {Link} from 'react-router-dom'
 
 export default function Header() {
 
@@ -19,7 +20,9 @@ export default function Header() {
             </div>
             <div className="hidden sm:hidden md:hidden lg:flex xl:flex 2xl:flex justify-end w-full">
                 <ul className="flex items-center lg:gap-6 xl:gap-8 2xl:gap-10 text-gray-500 hover:text-green-600">
-                    <li className="font-nunito font-sm border-b-2 hover:border-green-600 transition duration-300 ease-in-out">Home</li>
+                    <Link to="/dashboard">
+                        <li className="font-nunito font-sm border-b-2 hover:border-green-600 transition duration-300 ease-in-out">Home</li>
+                    </Link>
                     <li className="font-nunito font-sm border-b-2 hover:border-green-600 transition duration-300 ease-in-out">Browse</li>
                     <li className="font-nunito font-sm border-b-2 hover:border-green-600 transition duration-300 ease-in-out">Source More</li>
                     <li className="font-nunito font-sm border-b-2 hover:border-green-600 transition duration-300 ease-in-out">Our Service</li>
