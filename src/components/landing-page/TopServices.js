@@ -50,7 +50,7 @@ export default function TopServices() {
     }
 
     return (
-        <div className="container mx-auto mt-16">
+        <>
             <div className="relative text-center font-nunito mb-6">
                 <h1 className="text-xl lg:text-3xl xl:text-4xl 2xl:text-4xl font-bold">
                     Top Services
@@ -125,6 +125,6 @@ export default function TopServices() {
                     </div>
                 </dic>
             </div>
-        </div>
+        </>
     )
 }

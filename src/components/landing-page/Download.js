@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Download() {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 mt-16 mb-16 mx-6 p-6 lg:mx-20 items-center">
+        <>
             <div className="hidden md:block">
                 <img className="w-3/4 h-3/4 shadow-2xl mx-auto object-cover rounded-md"
                     src={`${process.env.PUBLIC_URL}/images/subscribe-banner.png`}
@@ -25,6 +25,6 @@ export default function Download() {
                     />
                 </div>
             </div>
-        </div>
+        </>
     )
 }

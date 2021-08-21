@@ -20,7 +20,7 @@ export default function Header() {
             </div>
             <div className="hidden sm:hidden md:hidden lg:flex xl:flex 2xl:flex justify-end w-full">
                 <ul className="flex items-center lg:gap-6 xl:gap-8 2xl:gap-10 text-gray-500 hover:text-green-600">
-                    <Link to="/dashboard">
+                    <Link to="/dashboard-page/orders">
                         <li className="font-nunito font-sm border-b-2 hover:border-green-600 transition duration-300 ease-in-out">Home</li>
                     </Link>
                     <li className="font-nunito font-sm border-b-2 hover:border-green-600 transition duration-300 ease-in-out">Browse</li>
@@ -50,7 +50,9 @@ export default function Header() {
                         </div>
                         <div>
                             <ul className="space-y-4">
-                                <li className="font-nunito font-sm">Home</li>
+                                <Link to="/dashboard-page/orders">
+                                    <li className="font-nunito font-sm">Home</li>
+                                </Link>
                                 <li className="font-nunito font-sm">Browse</li>
                                 <li className="font-nunito font-sm">Source More</li>
                                 <li className="font-nunito font-sm">Our Service</li>

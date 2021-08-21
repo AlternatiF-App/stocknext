@@ -8,9 +8,9 @@ export default function CardInOrder() {
                 <span className="bg-gray-800 text-white rounded-md py-2 px-6">
                     In Transit
                 </span>
-                <div className="font-nunito text-sm flex space-x-2 ml-20">
-                    <h2 className="text-gray-400">Customer</h2>
-                    <h2 className="font-bold">TAO CHEN</h2>
+                <div className="text-sm flex space-x-2 ml-20">
+                    <h2 className="font-nunito text-gray-400">Customer</h2>
+                    <h2 className="text-opensans font-bold">TAO CHEN</h2>
                 </div>
             </div>
             <div className="flex pt-4">

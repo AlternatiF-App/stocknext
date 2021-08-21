@@ -3,7 +3,7 @@ import CardEvaluation from './card/CardEvaluation'
 
 export default function Evaluation() {
     return (
-        <div className="mt-16 container mx-auto">
+        <>
             <div className="relative text-center font-nunito mb-6">
                 <h1 className="text-xl lg:text-3xl xl:text-4xl 2xl:text-4xl font-bold">
                     Client Evaluation
@@ -27,6 +27,6 @@ export default function Evaluation() {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Tagline() {
     return (
-        <div className="mt-16 mx-6 lg:mx-20">
+        <>
             <div className="font-nunito text-center container mx-auto">
                 <h1 className="text-xl lg:text-3xl xl:text-4xl 2xl:text-4xl font-bold">
                     Step into different world
@@ -71,6 +71,6 @@ export default function Tagline() {
                     />
                 </div>
             </div>
-        </div>
+        </>
     )
 }
