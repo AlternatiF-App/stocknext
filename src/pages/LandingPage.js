@@ -1,38 +1,109 @@
 import React from 'react'
-import Navbar from '../components/header/Header'
-import Section1 from '../components/landing-page/Section1'
-import Partner from '../components/landing-page/Partner'
-import TopProducts from '../components/landing-page/TopProducts'
-import TopServices from '../components/landing-page/TopServices'
-import Tagline from '../components/landing-page/Tagline'
-import Download from '../components/landing-page/Download'
-import Evaluation from '../components/landing-page/Evaluation'
+import shopeeImg from '../assets/partner.jfif'
+import Header from '../components/header/Header'
 import Footer from '../components/footer/Footer'
+import Section1 from '../components/landing-page/Section1'
+import TopProducts from '../components/landing-page/TopProducts'
+import Tagline from '../components/landing-page/Tagline'
+import CardEvaluation from '../components/landing-page/card/CardEvaluation'
 
 export default function LandingPage() {
     return (
         <div>
-            <Navbar/>
+            <Header/>
             <section className="grid grid-cols-1 md:grid-cols-2 bg-gray-200">
                 <Section1/>
             </section>
             <section className="container mx-auto mt-16">
-                <Partner/>
+                <div className="relative text-center mx-10 my-4 md:mx-8 md:my-6">
+                    <h2 className="font-nunito font-bold text-xl lg:text-3xl xl:text-4xl 2xl:text-4xl">
+                        Trusted by over 1,000,000 business worldwide customers
+                    </h2>
+                </div>
+                <div className="container mx-auto flex space-x-2 overflow-x-auto">
+                    <img
+                        className="w-auto h-48 md:h-56 py-16"
+                        src={shopeeImg}
+                    />
+                    <img
+                        className="w-auto h-48 md:h-56 py-16"
+                        src={shopeeImg}
+                    />
+                    <img
+                        className="w-auto h-48 md:h-56 py-16"
+                        src={shopeeImg}
+                    />
+                    <img
+                        className="w-auto h-48 md:h-56 py-16"
+                        src={shopeeImg}
+                    />
+                    <img
+                        className="w-auto h-48 md:h-56 py-16"
+                        src={shopeeImg}
+                    />
+                    <img
+                        className="w-auto h-48 md:h-56 py-16"
+                        src={shopeeImg}
+                    />
+                </div>
             </section>
             <section className="container mx-auto mt-16">
                 <TopProducts/>
             </section>
             <section className="container mx-auto mt-16">
-                <TopServices/>
+                <TopProducts/>
             </section>
             <section className="mt-16 mx-6 lg:mx-20">
                 <Tagline/>
             </section>
             <section className="grid grid-cols-1 md:grid-cols-2 mt-16 mb-16 mx-6 p-6 lg:mx-20 items-center">
-                <Download/>
+                <div className="hidden md:block">
+                    <img className="w-3/4 h-3/4 shadow-2xl mx-auto object-cover rounded-md"
+                        src={`${process.env.PUBLIC_URL}/images/subscribe-banner.png`}
+                    />
+                </div>
+                <div className="relative text-center md:text-right font-nunito space-y-2">
+                    <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold">
+                        Put <span className="text-green-600">Stocknext </span>
+                        <span className="md:block">in You Pocket</span>
+                    </h1>
+                    <p className="text-sm md:text-base lg:text-base 2xl:text-lg">
+                        Our application is designed for Android and Apple and you can find our application in googleplay and appstore.
+                    </p>
+                    <div className="flex space-x-2 justify-center md:justify-end">
+                        <img className="w-2/5 md:w-1/3 xl:w-1/5"
+                            src={`${process.env.PUBLIC_URL}/images/googleplay.png`}
+                        />
+                        <img className="w-2/5 md:w-1/3 xl:w-1/5"
+                            src={`${process.env.PUBLIC_URL}/images/appstore.png`}
+                        />
+                    </div>
+                </div>
             </section>
             <section className="mt-16 container mx-auto">
-                <Evaluation/>
+                <div className="relative text-center font-nunito mb-6">
+                    <h1 className="text-xl lg:text-3xl xl:text-4xl 2xl:text-4xl font-bold">
+                        Client Evaluation
+                    </h1>
+                    <h2 className="text-base lg:text-xl xl:text-2xl 2xl:text-2xl tracking-wide">
+                        Client can send their opinion about our application
+                    </h2>
+                </div>
+                <div className="flex justify-center mt-4 mx-auto">
+                    <img className="w-96 h-96 object-cover rounded-md hidden md:block"
+                        src={`${process.env.PUBLIC_URL}/images/team.jpg`}
+                    />
+                    <div className="flex overflow-x-auto items-center z-50 md:-ml-20">
+                        <div className="flex space-x-4">
+                            <CardEvaluation/>
+                            <CardEvaluation/>
+                            <CardEvaluation/>
+                            <CardEvaluation/>
+                            <CardEvaluation/>
+                            <CardEvaluation/>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section className="container mx-auto grid grid-cols-1 md:grid-cols-2 mt-16 px-10 py-4 md:px-14 md:py-8 xl:py-20 xl:px-40">
                 <div className="font-nunito text-center md:text-left">

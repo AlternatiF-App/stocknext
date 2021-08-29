@@ -55,7 +55,6 @@ export default function TabMenu() {
                         <CardInOrder/>
                         <CardInOrder/>
                         <CardInOrder/>
-                        <CardInOrder/>
                     </div>
             }
         </div>

@@ -1,21 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import LandingPage from './pages/LandingPage'
+import Dashboard from './pages/Dashboard'
+import ProductDetail from './components/dashboard/ProductDetail'
+import TrackOrderDetail from './components/dashboard/TrackOrdersDetail'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import {Provider} from 'react-redux'
-import store from './rootSlice/store'
+import store from './redux/store'
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <Router>
+        <Switch>
+          <Route exact path='/' component={LandingPage}/>
+          <Route exact path='/Dashboard/:pages' component={Dashboard}/>
+          <Route exact path='/Dashboard/products/:id' component={ProductDetail}/>
+          <Route exact path='/Dashboard/track-order/:id' component={TrackOrderDetail}/>
+        </Switch>
+      </Router>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
