@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 
-export default function Header() {
+export default function Header(){
 
     const [menu, setMenu] = useState(false)
 
@@ -16,11 +16,13 @@ export default function Header() {
     return (
         <div className="bg-white bg-opacity-70 py-4 px-6 md:px-14 lg:px-16 xl:px-20 2xl:px-24 flex justify-between">
             <div className="font-nunito text-3xl font-bold tracking-wide">
-                <h1>stock<span className="text-green-600">next</span></h1>
+                <Link to='/'>
+                    <h1>stock<span className="text-green-600">next</span></h1>
+                </Link>
             </div>
             <div className="hidden sm:hidden md:hidden lg:flex xl:flex 2xl:flex justify-end w-full">
                 <ul className="flex items-center lg:gap-6 xl:gap-8 2xl:gap-10 text-gray-500 hover:text-green-600">
-                    <Link to="/dashboard-page/orders">
+                    <Link to='/dashboard/orders'>
                         <li className="font-nunito font-sm border-b-2 hover:border-green-600 transition duration-300 ease-in-out">Home</li>
                     </Link>
                     <li className="font-nunito font-sm border-b-2 hover:border-green-600 transition duration-300 ease-in-out">Browse</li>
@@ -40,17 +42,19 @@ export default function Header() {
             </div>
             {
                 menu === true && <div className="relative z-50 transition duration-150 ease-out" onClick={() => toggleMenu()}>
-                    <dvi className="fixed inset-0 bg-gray-800 opacity-25 transition duration-150 ease-in"></dvi>
+                    <div className="fixed inset-0 bg-gray-800 opacity-25 transition duration-150 ease-in"></div>
                     <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm p-6 bg-white border-r overflow-y-auto ">
                         <div className="flex justify-between items-center font-nunito text-3xl mb-10 font-bold">
-                            <h1>stock<span className="text-green-600">next</span></h1>
+                            <Link to='/'>
+                                <h1>stock<span className="text-green-600">next</span></h1>
+                            </Link>
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                             </svg>
                         </div>
                         <div>
                             <ul className="space-y-4">
-                                <Link to="/dashboard-page/orders">
+                                <Link to='/dashboard/orders'>
                                     <li className="font-nunito font-sm">Home</li>
                                 </Link>
                                 <li className="font-nunito font-sm">Browse</li>

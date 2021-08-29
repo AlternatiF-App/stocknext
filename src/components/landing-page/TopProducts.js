@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState } from 'react'
 import CardProduct from './card/CardProduct'
 import jsonProducts from '../../products.json'
 
