@@ -15,9 +15,9 @@ ReactDOM.render(
       <Router>
         <Switch>
           <Route exact path='/' component={LandingPage}/>
-          <Route exact path='/Dashboard/:pages' component={Dashboard}/>
-          <Route exact path='/Dashboard/products/:id' component={ProductDetail}/>
-          <Route exact path='/Dashboard/track-order/:id' component={TrackOrderDetail}/>
+          <Route path='/Dashboard' component={Dashboard}/>
+          {/* <Route exact path='/Dashboard/products/:id' component={ProductDetail}/>
+          <Route exact path='/Dashboard/track-order/:id' component={TrackOrderDetail}/> */}
         </Switch>
       </Router>
     </Provider>

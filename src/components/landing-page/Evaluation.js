@@ -1,5 +1,6 @@
 import React from 'react'
 import CardEvaluation from './card/CardEvaluation'
+import '../../index.css'
 
 export default function Evaluation() {
     return (

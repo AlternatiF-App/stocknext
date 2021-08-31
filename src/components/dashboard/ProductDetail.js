@@ -1,11 +1,24 @@
 import React, {useState} from 'react'
 import Navbar from '../header/HeaderDashboard'
 import TabMenuDetail from './TabMenuDetail'
+import jsonProducts from '../../products.json'
 import {ChevronRightIcon, PlusIcon} from '@heroicons/react/solid'
 
-export default function ProductDetail() {
+export default function ProductDetail(props) {
+
+    const { id } = props.match.params
+    let {
+        img,
+        merk,
+        price,
+        stock,
+        grosir,
+        shipping
+    } = jsonProducts[id-1]
 
     const [push, setPush] = useState(false)
+
+    console.log("data", jsonProducts[id])
 
     const togglePush = () => {
         if(push === false){
@@ -39,18 +52,18 @@ export default function ProductDetail() {
                     </div>
                     <div className="col-span-4">
                         <img className="w-full h-full object-cover rounded-md"
-                            src={`${process.env.PUBLIC_URL}/images/CHARMING.jpg`}
+                            src={`${process.env.PUBLIC_URL}${img}`}
                         />
                     </div>
                 </div>
                 <div>
-                    <h1 className="font-opensans text-5xl font-extrabold">Scarlett</h1>
+                    <h1 className="font-opensans text-5xl font-extrabold">{merk}</h1>
                     <p className="font-nunito text-sm text-gray-400 mt-4">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever 
                     </p>
                     <div className="font-nunito">
                         <h4 className="text-base font-semibold uppercase">Price</h4>
-                        <h2 className="font-extrabold text-xl">$25.00 ~ $50.00</h2>
+                        <h2 className="font-extrabold text-xl">${price}</h2>
                     </div>
                     <div className="font-nunito mt-4">
                         <h4 className="text-base font-semibold uppercase">Stock</h4>

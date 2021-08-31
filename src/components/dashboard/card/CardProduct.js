@@ -1,8 +1,9 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {Link, useRouteMatch} from 'react-router-dom'
 
 export default function CardProduct(props) {
 
+    const {path, url} = useRouteMatch()
     let {
         id,
         img,
@@ -15,7 +16,7 @@ export default function CardProduct(props) {
 
     return (
         <div className="group">
-            <Link to={`/dashboard/products/${id}`}>
+            <Link to={`${url}/${id}`}>
                 <img className="rounded-md"
                     src={`${process.env.PUBLIC_URL+img}`}
                 />

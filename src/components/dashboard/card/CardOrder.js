@@ -1,8 +1,10 @@
 import React from 'react'
 import {DotsVerticalIcon} from '@heroicons/react/solid'
-import {Link} from 'react-router-dom'
+import {Link, useRouteMatch} from 'react-router-dom'
 
 export default function CardOrder(props) {
+
+    const {path, url} = useRouteMatch()
 
     let {
         id,
@@ -76,9 +78,9 @@ export default function CardOrder(props) {
                     <div className="font-nunito text-sm">
                         <h2 className="text-gray-400">Action</h2>
                         <hr className="w-16 mb-4"/>
-                        <Link to={`/Dashboard/track-order/${id}`}>
+                        <Link to={`${url}/${id}`}>
                             <button className="font-bold bg-gray-800 text-white rounded-md px-6 py-1">
-                                Track
+                                Track {id}
                             </button>
                         </Link>
                     </div>

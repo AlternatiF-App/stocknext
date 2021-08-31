@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from 'react'
-import {Link, useParams} from 'react-router-dom'
+import {Link, useRouteMatch} from 'react-router-dom'
 
 export default function SideMenu() {
 
     const [active, setActive] = useState(1)
+    const {path, url} = useRouteMatch()
 
     const toggleActive = (index) => {
         setActive(index)
@@ -18,7 +19,7 @@ export default function SideMenu() {
                     </Link>
                 </div>
                 <ul className="space-y-4 mt-8 font-nunito font-bold text-xl">
-                    <Link to={`/dashboard/orders`}>
+                    <Link to={`${url}/orders`}>
                         <li onClick={() => toggleActive(1)}
                             className={`${active === 1 && ("bg-green-600 text-white")} flex px-4 py-4 rounded-md`}>
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

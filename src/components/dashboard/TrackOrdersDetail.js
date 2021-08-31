@@ -1,8 +1,17 @@
 import React from 'react'
 import Navbar from '../header/HeaderDashboard'
 import {ArchiveIcon} from '@heroicons/react/solid'
+import jsonProducts from '../../products.json'
 
-export default function TrackOrdersDetail() {
+export default function TrackOrdersDetail(props) {
+
+    const { id } = props.match.params
+    const {
+        region
+    } = jsonProducts[id-1]
+
+    console.log("data", jsonProducts[id])
+
     return (
         <div className="bg-gray-200 w-5/6 h-full overflow-y-auto fixed top-0 right-0 px-6">
             <Navbar/>
@@ -52,6 +61,10 @@ export default function TrackOrdersDetail() {
                             <span className="font-nunito text-gray-500">Ready to Dispatch</span>
                         </div>
                     </div>
+                </div>
+                <div className="mt-10">
+                    <span className="font-opensans text-2xl font-bold block">Delivering</span>
+                    <span className="font-opensans text-2xl font-bold">to {region}</span>
                 </div>
             </div>
         </div>
